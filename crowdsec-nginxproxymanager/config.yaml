@@ -1,0 +1,20 @@
+name: Crowdsec Nginx Proxy Manager
+version: 0.0.1
+slug: crowdsec-nginxproxymanager
+description: Manage Nginx proxy hosts with a simple, powerful interface with crowdsec support
+url: https://github.com/lockevod/addon-crowdsec-nginx-proxy-manager
+codenotary: codenotary@frenck.dev
+webui: http://[HOST]:[PORT:7081]
+init: false
+arch:
+- aarch64
+hassio_api: true
+ports:
+  7080/tcp: 80
+  7081/tcp: 81
+  7443/tcp: 443
+map:
+- addon_config:rw
+backup_exclude:
+- '*/logs'
+image: ghcr.io/lockevod/nginxproxymanager/{arch}
