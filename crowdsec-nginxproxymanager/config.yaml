@@ -17,4 +17,4 @@ map:
 - addon_config:rw
 backup_exclude:
 - '*/logs'
-image: ghcr.io/lockevod/nginxproxymanager/{arch}
+image: ghcr.io/lockevod/crowdsec-nginxproxymanager/{arch}
